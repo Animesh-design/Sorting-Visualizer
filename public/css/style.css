@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  color: black;
+   text-transform: uppercase;
+  
+}
+nav {
+  background-image: url(./background-4232859_1280.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: white; /* Text Color*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 60%; /*Arrange of different things in NavBar */
+      grid-template-columns: 30% 60%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  padding: 0% 5%;
+
+}
+
+nav .array-inputs { /*for arranging the scrollable in front on name*/
+   display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_size{
+  padding: 5% 0%;
+}
+nav .array-inputs #a_speed{
+  padding: 5% 0%;
+}
+nav .array-inputs #a_generate{
+  background-color: transparent;
+  border: none;
+  outline: none;
+ 
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+
+}
+
+nav .array-inputs #a_generate:hover{
+  cursor: pointer;
+}
+
+nav .header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 3% 0%;
+}
+
+nav .header_right .algos {
+   display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (16.66667%)[6];
+      grid-template-columns: repeat(6, 16.66667%);
+      
+      place-content :center;
+      padding:2% 0%
+      
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  /*Write Here for Changing Color of algo button*/
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+  
+  
+ 
+}
+
+/* nav.header_right.algos button:hover {
+   text-shadow: cornflowerblue;
+} */
+
+nav .header_right .algos button:hover {/*Hover Button */
+ 
+  cursor: pointer;
+ 
+}
+
+nav .header_right .algos .butt_locked { /* When buttons are locked */
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {/* When buttons are selected */
+  background-color: white;
+  color: green;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* NAVIGATION ENDS */
+
+section{
+
+    display: -ms-grid; /*Divides the part in equal parts of divs in it */
+  display: grid;
+  /* -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%; */
+}
+
+section #Info_Cont1 {
+  padding: 10%;
+  
+  border: 1px solid green ;
+}
+
+section #array_container {
+  display: -webkit-box; /*Array Bars*/
+  display: -ms-flexbox;
+  display: flex;
+ 
+  width: 100%;
+  height: 85vh;
+  /* background-color: rgb(125, 236, 236) */
+}
+
+section #Info_Cont2 {
+  padding: 10%;
+  border: 1px solid green ;
+}
+
+.hide {
+  display: none;
+}
+input:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+ nav .header_right .algos  {
+  display: block;
+  font-size:x-large
+ }
+}
